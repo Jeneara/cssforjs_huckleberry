@@ -34,29 +34,64 @@ body {
 
 main {
   background-color: var(--medium);
-  padding: var(--spacing-4);
+  padding-top: var(--spacing-6);
+  padding-bottom: var(--spacing-6);
   border-top: var(--spacing-1) solid var(--light);
 }
 
 p {
-  margin-left: var(--spacing-1);
   font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: var(--spacing-2);
 }
-.indented-heading {
-  background-color: var(--secondary-color);
-  padding: var(--spacing-2) var(--spacing-4);
-  border-bottom: var(--spacing-1) solid var(--secondary-color-darker);
-  width: max-content;
-  margin-left: -16px;
-  margin-top: 0px;
-  /* padding-top: var(--spacing-1); */
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: var(--spacing-5);
+  font-size: 2rem;
+  line-height: 1.2;
 }
 
 .max-width-wrapper {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-top: var(--spacing-7); */
-  padding: var(--spacing-1);
+  padding: 0 var(--spacing-3);
+}
+
+.intro-chunk {
+  padding-top: var(--spacing-7);
+  padding-bottom: var(--spacing-6);
+  max-width: 415px;
+}
+
+strong {
+  color: var(--primary-color);
+}
+
+.card {
+  padding: var(--spacing-3);
+  border-bottom: var(--spacing-1) solid var(--light);
+  height: max-content;
   background-color: var(--white-color);
+  margin: 0 -24px;
+}
+
+.indented-heading {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  background-color: var(--secondary-color);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-bottom: var(--spacing-1) solid var(--secondary-color-darker);
+  width: fit-content;
+  margin: 0;
+  margin-top: -16px;
+  margin-left: -32px;
+  /* Make this rem so it scales with text sixes */
+  margin-bottom: 1rem;
 }
